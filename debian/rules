@@ -2,7 +2,10 @@
 export QT_SELECT := qt5
 
 %:
-	dh $@ --with scour
+	dh $@
 
 override_dh_auto_build:
 	dh_auto_build -- USE_LIBNOTIFY=1
+
+override_dh_auto_test:
+	echo "Auto-tests are disabled due to requiring a running X server."
