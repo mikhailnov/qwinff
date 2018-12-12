@@ -1,6 +1,14 @@
 /src/qwinff.pro.user
 /src/Makefile
+src/.qmake.stash
 /bin/
 /build/
 *.o
 *.qm
+*.deb
+*.ddeb
+/debian/*.log
+/debian/.debhelper/
+/debian/files
+/debian/qwinff-qt5
+/debian/qwinff-qt5.substvars

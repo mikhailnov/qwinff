@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+export QT_SELECT := qt5
+
+%:
+	dh $@ --with scour
+
+override_dh_auto_build:
+	dh_auto_build -- USE_LIBNOTIFY=1
